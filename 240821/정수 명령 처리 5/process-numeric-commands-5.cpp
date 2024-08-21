@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     vector<int> v;
     int action_time, value;
-    char *command;
+    char command[20];
 
     cin >> action_time;
     for(int i=0; i<action_time; i++) {
@@ -23,7 +23,7 @@ int main() {
         }
         else if(strcmp(command, "get")==0) {
             cin >> value;
-            cout << v[value] << "\n";
+            cout << v[value-1] << "\n";
         }
     }
 
