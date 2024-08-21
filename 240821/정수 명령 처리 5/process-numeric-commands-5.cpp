@@ -8,22 +8,22 @@ int main() {
     int action_time, value;
     char *command;
 
-    scanf("%d", &action_time);
+    cin >> action_time;
     for(int i=0; i<action_time; i++) {
-        scanf("%s", command);
-        if(strcmp(command, "push_back")==1) {
-            scanf("%d", &value);
+        cin >> command;
+        if(strcmp(command, "push_back")==0) {
+            cin >> value;
             v.push_back(value);
         }
-        else if(strcmp(command, "pop_back")==1) {
+        else if(strcmp(command, "pop_back")==0) {
             v.pop_back();
         }
-        else if(strcmp(command, "size")==1) {
-            printf("%d\n", v.size());
+        else if(strcmp(command, "size")==0) {
+            cout << v.size() << "\n";
         }
-        else if(strcmp(command, "get")==1) {
-            scanf("%d", &value);
-            printf("%d\n", v[value]);
+        else if(strcmp(command, "get")==0) {
+            cin >> value;
+            cout << v[value] << "\n";
         }
     }
 
