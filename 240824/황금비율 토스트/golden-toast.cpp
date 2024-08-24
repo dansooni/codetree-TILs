@@ -22,9 +22,17 @@ int main() {
         cin >> command;
 
         if(command=='L') {
+            if(it==breads.begin())
+            {
+                continue;
+            }
             it--;
         }
         else if(command=='R') {
+            if(it==breads.end())
+            {
+                continue;
+            }
             it++;
         }
         else if(command=='D') {
