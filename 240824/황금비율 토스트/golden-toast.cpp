@@ -28,6 +28,10 @@ int main() {
             it++;
         }
         else if(command=='D') {
+            if(it==breads.end())
+            {
+                continue;
+            }
             breads.erase(it);
         }
         else if(command=='P') {
