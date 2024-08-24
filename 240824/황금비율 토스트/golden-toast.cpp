@@ -8,7 +8,7 @@ int main() {
     string alphabets;
     char command, new_alphabet;
     list<char> breads;
-    list<char>::iterator it;
+    list<char>::iterator it, tmp;
 
     cin >> n >> m;
     cin >> alphabets;
@@ -40,8 +40,7 @@ int main() {
             {
                 continue;
             }
-            breads.erase(it);
-            it--;
+            it = breads.erase(it);
         }
         else if(command=='P') {
             cin >> new_alphabet;
