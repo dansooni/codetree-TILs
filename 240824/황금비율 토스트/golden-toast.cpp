@@ -41,6 +41,7 @@ int main() {
                 continue;
             }
             breads.erase(it);
+            it--;
         }
         else if(command=='P') {
             cin >> new_alphabet;
